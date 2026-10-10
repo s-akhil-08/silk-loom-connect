@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="google-site-verification" content="TFZ7_qkizTNkKsE3gAb5s9uCHJ5kMHoLKlM_h2Heejk" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3BEZ97C9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-E3BEZ97C9F');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <title>Silk & Loom | Official Socials & Connect Hub</title>
+    <meta name="description" content="Silk & Loom - Authentic Gadwal, Kanchipuram & Pure Silk Heritage Weaves since 1998. Connect with our official store, WhatsApp VIP channel, Instagram, and Flagship Studio." />
+    <meta name="keywords" content="Silk & Loom, Silk and Loom, Gadwal Sarees, Pure Silk Sarees, Handloom Sarees, Kanchipuram Silk, Banarasi Silk, Heritage Handlooms, Telangana Handloom" />
+    <meta name="author" content="Silk & Loom" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://silk-loom-connect.vercel.app/" />
+
+    <!-- Open Graph (Facebook / WhatsApp / LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Silk & Loom | Official Socials & Connect Hub" />
+    <meta property="og:description" content="Silk & Loom - Authentic Gadwal & Pure Silk Heritage Weaves. Connect with our official store, WhatsApp VIP, Instagram, and studio directions." />
+    <meta property="og:image" content="https://silk-loom-connect.vercel.app/st_logo.png" />
+    <meta property="og:url" content="https://silk-loom-connect.vercel.app/" />
+    <meta property="og:site_name" content="Silk & Loom" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Silk & Loom | Official Socials & Connect Hub" />
+    <meta name="twitter:description" content="Silk & Loom - Authentic Gadwal & Pure Silk Heritage Weaves. Explore official channels, store directions, and WhatsApp VIP." />
+    <meta name="twitter:image" content="https://silk-loom-connect.vercel.app/st_logo.png" />
+
+    <!-- Mobile Theme Colors -->
+    <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F4F5F7" media="(prefers-color-scheme: light)" />
+    
+    <script>
+      (function() {
+        try {
+          var urlParams = new URLSearchParams(window.location.search);
+          var urlTheme = urlParams.get('theme');
+          if (urlTheme === 'dark' || urlTheme === 'light' || urlTheme === 'system') {
+            localStorage.setItem('silk-loom-theme', urlTheme);
+            urlParams.delete('theme');
+            var newQuery = urlParams.toString();
+            var newUrl = window.location.pathname + (newQuery ? '?' + newQuery : '') + window.location.hash;
+            if (window.history && window.history.replaceState) {
+              window.history.replaceState(null, '', newUrl);
+            }
+          }
+          var saved = localStorage.getItem('silk-loom-theme') || localStorage.getItem('teja-qr-theme');
+          var isDark = false;
+          if (saved === 'dark') {
+            isDark = true;
+          } else if (saved === 'system') {
+            isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          } else if (saved === 'light') {
+            isDark = false;
+          } else {
+            // Default theme is light
+            isDark = false;
+          }
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Google Fonts: Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-paper text-carbon min-h-screen selection:bg-carbon selection:text-paper antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

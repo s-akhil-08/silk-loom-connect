@@ -1,0 +1,30 @@
+# Robots.txt for Silk & Loom Official Hub
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# AI & Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap Reference
+Sitemap: https://silk-loom-connect.vercel.app/sitemap.xml
